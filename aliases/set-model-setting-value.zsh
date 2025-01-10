@@ -19,15 +19,23 @@ function set-model-setting-value() {
 function _set-model-setting-value_completion() {
 	local -a first_arg_options=(
 		"show_new_york_debt_protection_disclaimer_option"
-		"show_new_york_debt_protection_disclaimer_experiment"
+		"show_new_york_debt_protection_disclaimer_for_unknown_location_experiment"
+		"enable_nextjs_pcw_checkout_flow"
+		"pre_visit__pre_visit_checkout_v2_ui_enabled"
 	)
 
 	case "$words[2]" in
-		show_new_york_debt_protection_disclaimer_experiment|restart)
+		show_new_york_debt_protection_disclaimer_for_unknown_location_experiment|\
+		enable_nextjs_pcw_checkout_flow|\
+		pre_visit__pre_visit_checkout_v2_ui_enabled)
 	    		local -a second_arg_options=("true" "false")
 	    	;;
 	  	show_new_york_debt_protection_disclaimer_option)
-	    		local -a second_arg_options=("never" "for_new_york_visits" "for_new_york_visits_and_visits_without_locations")
+	    		local -a second_arg_options=(
+				"never"
+				"for_new_york_visits"
+				"for_new_york_visits_and_visits_without_locations"
+			)
 	    	;;
 	  	*)
 	    		local -a second_arg_options=()
