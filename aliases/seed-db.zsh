@@ -1,0 +1,1 @@
+alias seed-db='docker compose exec web bash -c "python ./manage.py loaddata initial.json superuser.json defaultusers.json && python ./manage.py loaddata --database strategizer initial_strategizer.json"'
