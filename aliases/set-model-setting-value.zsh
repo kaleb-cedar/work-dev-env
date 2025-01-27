@@ -1,7 +1,9 @@
+#!/usr/bin/env zsh
+
 function set-model-setting-value() {
 	if [[ -z "$1" ]]; then
 	  echo "Error: Missing required argument."
-	  echo "Usage: $0 <client-app> [path]"
+	  echo "Usage: $0 <model-setting> <value>"
 	  return 1
 	fi
 
