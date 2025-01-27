@@ -22,12 +22,14 @@ function _set-model-setting-value_completion() {
 		"show_new_york_debt_protection_disclaimer_for_unknown_location_experiment"
 		"enable_nextjs_pcw_checkout_flow"
 		"pre_visit__pre_visit_checkout_v2_ui_enabled"
+		"customization_editor_enabled"
 	)
 
 	case "$words[2]" in
 		show_new_york_debt_protection_disclaimer_for_unknown_location_experiment|\
 		enable_nextjs_pcw_checkout_flow|\
-		pre_visit__pre_visit_checkout_v2_ui_enabled)
+		pre_visit__pre_visit_checkout_v2_ui_enabled|\
+		customization_editor_enabled)
 	    		local -a second_arg_options=("true" "false")
 	    	;;
 	  	show_new_york_debt_protection_disclaimer_option)
