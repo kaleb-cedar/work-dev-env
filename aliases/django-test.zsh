@@ -4,3 +4,8 @@ function django-test() {
 	testpath=${1:-"."}
 	docker compose exec web bash -c "./manage.py test $testpath"
 }
+
+function django-test-update-snapshot() {
+	testpath=${1:-"."}
+	docker compose exec web bash -c "./manage.py test $testpath --snapshot-update"
+}
