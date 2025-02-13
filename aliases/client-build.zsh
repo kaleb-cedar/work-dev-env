@@ -11,7 +11,7 @@ function client-build() {
 }
 
 function _client-build_completion() {
-  compadd design_system pre_visit_app next_js provider_tools_app
+  compadd design_system pre_visit_app next_js provider_tools_app patient_app
 }
 
 compdef _client-build_completion client-build
