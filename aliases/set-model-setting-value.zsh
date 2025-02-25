@@ -27,6 +27,7 @@ function _set-model-setting-value_completion() {
 		"customization_editor_enabled"
 		"hide_balance_of_invoices_in_collections"
 		"payment_history_ui_enabled"
+		"patient_history_enabled"
 	)
 
 	case "$words[2]" in
@@ -35,7 +36,8 @@ function _set-model-setting-value_completion() {
 		pre_visit__pre_visit_checkout_v2_ui_enabled|\
 		customization_editor_enabled|\
 		hide_balance_of_invoices_in_collections|\
-		payment_history_ui_enabled)
+		payment_history_ui_enabled|\
+		patient_history_enabled)
 	    		local -a second_arg_options=("true" "false")
 	    	;;
 	  	show_new_york_debt_protection_disclaimer_option)
