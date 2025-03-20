@@ -30,6 +30,7 @@ function _set-model-setting-value_completion() {
 		"patient_history_enabled"
 		"operator_portal__receipts_enabled"
 		"hba_saved_payment_method_enabled"
+		"refunds_enabled"
 	)
 
 	case "$words[2]" in
@@ -41,7 +42,8 @@ function _set-model-setting-value_completion() {
 		payment_history_ui_enabled|\
 		patient_history_enabled|\
 		operator_portal__receipts_enabled|\
-		hba_saved_payment_method_enabled)
+		hba_saved_payment_method_enabled|\
+		refunds_enabled)
 	    		local -a second_arg_options=("true" "false")
 	    	;;
 	  	show_new_york_debt_protection_disclaimer_option)
