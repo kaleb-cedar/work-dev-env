@@ -11,7 +11,7 @@ function make-empty-migration() {
 }
 
 function _make-empty-migration_completion() {
-	compadd engagements api_app
+	compadd engagements api_app payment_models
 }
 
 compdef _make-empty-migration_completion make-empty-migration
