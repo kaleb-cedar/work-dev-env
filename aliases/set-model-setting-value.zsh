@@ -32,6 +32,7 @@ function _set-model-setting-value_completion() {
 		"hba_saved_payment_method_enabled"
 		"refunds_enabled"
 		"enable_improved_stripe_dispute_handling"
+		"enable_stripe_failed_refund_handling"
 	)
 
 	case "$words[2]" in
@@ -45,7 +46,8 @@ function _set-model-setting-value_completion() {
 		operator_portal__receipts_enabled|\
 		hba_saved_payment_method_enabled|\
 		refunds_enabled|\
-		enable_improved_stripe_dispute_handling)
+		enable_improved_stripe_dispute_handling|\
+		enable_stripe_failed_refund_handling)
 	    		local -a second_arg_options=("true" "false")
 	    	;;
 	  	show_new_york_debt_protection_disclaimer_option)
