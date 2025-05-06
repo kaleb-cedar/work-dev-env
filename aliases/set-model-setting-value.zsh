@@ -33,6 +33,8 @@ function _set-model-setting-value_completion() {
 		"refunds_enabled"
 		"enable_improved_stripe_dispute_handling"
 		"enable_stripe_failed_refund_handling"
+		"stripe_express_checkout_enabled"
+		"use_stripe_payment_intents_api"
 	)
 
 	case "$words[2]" in
@@ -47,7 +49,9 @@ function _set-model-setting-value_completion() {
 		hba_saved_payment_method_enabled|\
 		refunds_enabled|\
 		enable_improved_stripe_dispute_handling|\
-		enable_stripe_failed_refund_handling)
+		enable_stripe_failed_refund_handling|\
+		stripe_express_checkout_enabled|\
+		use_stripe_payment_intents_api)
 	    		local -a second_arg_options=("true" "false")
 	    	;;
 	  	show_new_york_debt_protection_disclaimer_option)
