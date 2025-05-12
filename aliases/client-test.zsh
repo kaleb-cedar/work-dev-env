@@ -11,7 +11,7 @@ function client-test() {
 }
 
 function _client-test_completion() {
-  compadd design_system pre_visit_app patient_app scenario_builder/util
+  compadd design_system pre_visit_app patient_app scenario_builder/util widgets
 }
 
 compdef _client-test_completion client-test
