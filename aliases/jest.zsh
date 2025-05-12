@@ -13,7 +13,7 @@ function jest() {
 }
 
 function _jest_completion() {
-  compadd design_system pre_visit_app next_js provider_tools_app
+  compadd design_system pre_visit_app next_js provider_tools_app widgets
 }
 
 compdef _jest_completion jest
