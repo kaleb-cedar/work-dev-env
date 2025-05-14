@@ -35,6 +35,8 @@ function _set-model-setting-value_completion() {
 		"enable_stripe_failed_refund_handling"
 		"stripe_express_checkout_enabled"
 		"use_stripe_payment_intents_api"
+		"nextjs_visit_details_enabled"
+		"nextjs_visit_details_show_visits_on_payment_checkout_pages"
 	)
 
 	case "$words[2]" in
@@ -51,7 +53,9 @@ function _set-model-setting-value_completion() {
 		enable_improved_stripe_dispute_handling|\
 		enable_stripe_failed_refund_handling|\
 		stripe_express_checkout_enabled|\
-		use_stripe_payment_intents_api)
+		use_stripe_payment_intents_api|\
+		nextjs_visit_details_enabled|\
+		nextjs_visit_details_show_visits_on_payment_checkout_pages)
 	    		local -a second_arg_options=("true" "false")
 	    	;;
 	  	show_new_york_debt_protection_disclaimer_option)
