@@ -37,6 +37,7 @@ function _set-model-setting-value_completion() {
 		"use_stripe_payment_intents_api"
 		"nextjs_visit_details_enabled"
 		"nextjs_visit_details_show_visits_on_payment_checkout_pages"
+		"show_payment_method_login_cta_experiment"
 	)
 
 	case "$words[2]" in
@@ -55,7 +56,8 @@ function _set-model-setting-value_completion() {
 		stripe_express_checkout_enabled|\
 		use_stripe_payment_intents_api|\
 		nextjs_visit_details_enabled|\
-		nextjs_visit_details_show_visits_on_payment_checkout_pages)
+		nextjs_visit_details_show_visits_on_payment_checkout_pages|\
+		show_payment_method_login_cta_experiment)
 	    		local -a second_arg_options=("true" "false")
 	    	;;
 	  	show_new_york_debt_protection_disclaimer_option)
